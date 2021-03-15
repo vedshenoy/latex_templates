@@ -1,0 +1,81 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1.2in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newpxtext, newpxmath}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, allcolors=blue}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{\thepage/\pageref{LastPage}}
+\rhead{Assignment X}
+
+\usepackage{caption}
+\captionsetup{labelfont=bf,
+	justification=centering,
+	labelsep=newline, % <<< label and text on different lines
+	singlelinecheck=false,
+	margin=2em}
+
+\newcommand{\itemspacing}{
+	\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}
+}
+
+\usepackage[authoryear]{natbib}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\rough}[1]{{\color{red}#1}}
+
+\begin{document}
+	\begin{center}
+		\normalsize{\textsc{RG 101: My Awful Course}}\\[0.5em]
+		\Large{Assignment X: \\}
+		\LARGE{Catchy title for the resume}\\[0.75em]
+		\large{Clueless Author\\(Affil/Roll No.)}
+	\end{center}
+
+\section{Sample Tables and Figures}
+Table~\ref{tab:grades} shows why a certain batch in Engineering Physics is filled with depressed alcoholics. Figure~\ref{fig:galaxy} shows why nothing really matters; we are just complicated specks on dust.
+\begin{table}[!h]
+	\centering
+	\begin{tabular}{c c c c}
+		\toprule
+		\toprule
+		Grade & \multicolumn{3}{c}{Number of Students}\\
+		\midrule[0.01pt]
+		{} & 2020 & 2019 & 2018\\
+		\midrule
+		AA & 2 & 0 & 5 \\
+		AB & 23& 0 & 7 \\
+		BB & 9 & 0 & 11\\
+		BC & 2 & 1 & 3 \\
+		CC & 5 & 7 & 6 \\
+		CD & 9 & 8 & 6 \\
+		DD & 5 & 12& 6 \\
+		FR & 1 & 18& 2 \\
+		\midrule
+		\bottomrule
+	\end{tabular}
+	\caption{These are the grading statistics for the core Photonics courses conducted for the Engineering Physics batch in the years 2018-2020. Have fun.}
+	\label{tab:grades}
+\end{table}
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\linewidth]{milky_way.jpg}
+	\caption{This is the Milky Way galaxy. I can talk about this for several hours. Do not tempt me.}
+	\label{fig:galaxy}
+\end{figure}
+\end{document}
